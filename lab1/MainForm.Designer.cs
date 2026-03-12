@@ -94,14 +94,16 @@ namespace lab1
             this.btnXin1Plus.Location = new Point(20, 60);
             this.btnXin1Plus.Text = "Xin1 +";
             this.btnXin1Plus.Click += new EventHandler(this.btnXin1Plus_Click);
+            this.btnXin1Plus.Visible = false;
 
             this.btnXin1Minus.Location = new Point(100, 60);
             this.btnXin1Minus.Text = "Xin1 -";
             this.btnXin1Minus.Click += new EventHandler(this.btnXin1Minus_Click);
+            this.btnXin1Minus.Visible = false;
 
             this.lblXin1.Location = new Point(200, 60);
             this.lblXin1.Size = new Size(100, 23);
-            this.lblXin1.Text = "Xin1: 0";
+            this.lblXin1.Text = "Xin1: 3";
 
             // Xin2
             this.btnXin2Plus.Location = new Point(20, 90);
@@ -133,14 +135,16 @@ namespace lab1
             this.btnXoutPlus.Location = new Point(20, 150);
             this.btnXoutPlus.Text = "Xout +";
             this.btnXoutPlus.Click += new EventHandler(this.btnXoutPlus_Click);
+            this.btnXoutPlus.Visible = false;
 
             this.btnXoutMinus.Location = new Point(100, 150);
             this.btnXoutMinus.Text = "Xout -";
             this.btnXoutMinus.Click += new EventHandler(this.btnXoutMinus_Click);
+            this.btnXoutMinus.Visible = false;
 
             this.lblXout.Location = new Point(200, 150);
             this.lblXout.Size = new Size(100, 23);
-            this.lblXout.Text = "Xout: 0";
+            this.lblXout.Text = "Xout: 15";
             //
             // timer1
             // 

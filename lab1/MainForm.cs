@@ -9,7 +9,7 @@ namespace lab1
     public partial class MainForm : Form
     {
         double Z1 = 0;
-        double Xin1 = 0, Xin2 = 0, Xin3 = 0, Xout = 0;
+        double Xin1 = 3, Xin2 = 0, Xin3 = 0, Xout = 15;
         double dt = 0.1;
         double speed = 1.0;
 
@@ -19,6 +19,8 @@ namespace lab1
         {
             InitializeComponent();
             tankModel = new Tank(dt, 1.0, 1.0, 1.0, 1.0, 1.0);
+            lblXin1.Text = $"Xin1: {Xin1}";
+            lblXout.Text = $"Xout: {Xout}";
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -43,12 +45,12 @@ namespace lab1
 
         private void btnXin1Plus_Click(object sender, EventArgs e) 
         { 
-            Xin1++; lblXin1.Text = $"Xin1: {Xin1}"; 
+            // Input 1 is constant; no changes allowed.
         }
 
         private void btnXin1Minus_Click(object sender, EventArgs e) 
         { 
-            Xin1--; lblXin1.Text = $"Xin1: {Xin1}"; 
+            // Input 1 is constant; no changes allowed.
         }
 
         private void btnXin2Plus_Click(object sender, EventArgs e) 
@@ -73,12 +75,12 @@ namespace lab1
 
         private void btnXoutPlus_Click(object sender, EventArgs e) 
         { 
-            Xout++; lblXout.Text = $"Xout: {Xout}"; 
+            // Output is constant; no changes allowed.
         }
 
         private void btnXoutMinus_Click(object sender, EventArgs e) 
         { 
-            Xout--; lblXout.Text = $"Xout: {Xout}"; 
+            // Output is constant; no changes allowed.
         }
 
         private void timer1_Tick(object sender, EventArgs e)
